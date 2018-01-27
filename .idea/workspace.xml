@@ -2,35 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="162bb4d6-4f79-4c7c-8e2b-4be8b92abf9c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/sm-service.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/Address.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/City.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/Class.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/ContactDetails.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/Country.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/Division.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/Exam.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/ExamResult.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/Gender.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/Individual.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/Marks.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/Parent.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/Relation.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/School.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/State.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/Student.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/Subject.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/Teacher.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/sm-service/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,6 +59,7 @@
         <option value="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/Exam.java" />
         <option value="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/Marks.java" />
         <option value="$PROJECT_DIR$/sm-service/src/main/java/com/akg/sm/domain/ExamResult.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -126,41 +100,6 @@
             <path>
               <item name="school-management" type="b2602c69:ProjectViewProjectNode" />
               <item name="school-management" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="school-management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school-management" type="462c0819:PsiDirectoryNode" />
-              <item name="sm-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="school-management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school-management" type="462c0819:PsiDirectoryNode" />
-              <item name="sm-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="school-management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school-management" type="462c0819:PsiDirectoryNode" />
-              <item name="sm-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="school-management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school-management" type="462c0819:PsiDirectoryNode" />
-              <item name="sm-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="school-management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="school-management" type="462c0819:PsiDirectoryNode" />
-              <item name="sm-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -516,6 +455,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
         </state>
       </provider>
