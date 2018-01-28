@@ -1,21 +1,25 @@
 package com.akg.sm.domain;
 
+import javax.persistence.*;
+
+@Entity
 public class School {
 
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer schoolId;
+
+    @Column
     private String name;
+
+    @ManyToOne
     private Address address;
-    private ContactDetails contactDetails;
 
+    @ManyToOne
+    private Contact contact;
+
+    @ManyToOne
     private Teacher headTeacher;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -33,12 +37,20 @@ public class School {
         this.address = address;
     }
 
-    public ContactDetails getContactDetails() {
-        return contactDetails;
+    public Integer getSchoolId() {
+        return schoolId;
     }
 
-    public void setContactDetails(ContactDetails contactDetails) {
-        this.contactDetails = contactDetails;
+    public void setSchoolId(Integer schoolId) {
+        this.schoolId = schoolId;
+    }
+
+    public Contact getContact() {
+        return contact;
+    }
+
+    public void setContact(Contact contact) {
+        this.contact = contact;
     }
 
     public Teacher getHeadTeacher() {

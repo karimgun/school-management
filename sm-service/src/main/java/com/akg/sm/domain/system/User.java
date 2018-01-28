@@ -11,14 +11,21 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Integer userId;
 
-    @Column(name = "USER_NAME")
+    @Column
     private String userName;
 
-    @Column(name = "PASSWORD")
+    @Column
     private String password;
 
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
 
     public String getUserName() {
         return userName;
@@ -35,23 +42,6 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-
-//    public UserType getUserType() {
-//        return userType;
-//    }
-//
-//    public void setUserType(UserType userType) {
-//        this.userType = userType;
-//    }
-//
-//    public Preferences getPreferences() {
-//        return preferences;
-//    }
-//
-//    public void setPreferences(Preferences preferences) {
-//        this.preferences = preferences;
-//    }
-
 
     public boolean validateUser(String userName, String password) {
         userName = StringUtil.killWS(userName);

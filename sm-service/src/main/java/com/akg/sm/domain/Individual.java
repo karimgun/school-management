@@ -1,26 +1,33 @@
 package com.akg.sm.domain;
 
-import javax.persistence.Column;
+import javax.persistence.*;
 import java.sql.Date;
 
+@MappedSuperclass
 public abstract class Individual {
 
-    @Column(name = "FIRST_NAME")
+
+    @Column
     private String firstName;
 
-    @Column(name = "MIDDLE_NAME")
+    @Column
     private String middleName;
 
-    @Column(name = "LAST_NAME")
+    @Column
     private String lastName;
 
-    private Address address;
-    private ContactDetails contactDetails;
 
+    @ManyToOne(optional = false)
+    private Address address;
+
+    @ManyToOne(optional = false)
+    private Contact contact;
+
+    @Enumerated
     private Gender gender;
+
+    @Column
     private Date dateOfBirth;
-    private Date enrollmentDate;
-    private Date separationDate;
 
     public String getFirstName() {
         return firstName;
@@ -54,12 +61,12 @@ public abstract class Individual {
         this.address = address;
     }
 
-    public ContactDetails getContactDetails() {
-        return contactDetails;
+    public Contact getContact() {
+        return contact;
     }
 
-    public void setContactDetails(ContactDetails contactDetails) {
-        this.contactDetails = contactDetails;
+    public void setContact(Contact contact) {
+        this.contact = contact;
     }
 
     public Gender getGender() {
@@ -78,19 +85,5 @@ public abstract class Individual {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Date getEnrollmentDate() {
-        return enrollmentDate;
-    }
 
-    public void setEnrollmentDate(Date enrollmentDate) {
-        this.enrollmentDate = enrollmentDate;
-    }
-
-    public Date getSeparationDate() {
-        return separationDate;
-    }
-
-    public void setSeparationDate(Date separationDate) {
-        this.separationDate = separationDate;
-    }
 }

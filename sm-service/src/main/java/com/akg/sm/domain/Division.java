@@ -1,20 +1,32 @@
 package com.akg.sm.domain;
 
+import javax.persistence.*;
+
+@Entity
 public class Division {
 
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer divisionId;
+
+    @ManyToOne
     private Class aClass;
+
+    @Column
     private String code;
+
+    @Column
     private String name;
 
+    @ManyToOne
     private Teacher classTeacher;
 
-    public Integer getId() {
-        return id;
+    public Integer getDivisionId() {
+        return divisionId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setDivisionId(Integer divisionId) {
+        this.divisionId = divisionId;
     }
 
     public Class getaClass() {

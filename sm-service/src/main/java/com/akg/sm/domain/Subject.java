@@ -1,21 +1,32 @@
 package com.akg.sm.domain;
 
+import javax.persistence.*;
+
+@Entity
 public class Subject {
 
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer subjectId;
+
+    @Column
     private String name;
+
+    @Column
     private String description;
 
-    private Class aClass;
+    @Column
     private Integer maxMarks;
-    private Integer passionMarks;
 
-    public Integer getId() {
-        return id;
+    @Column
+    private Integer passingMarks;
+
+    public Integer getSubjectId() {
+        return subjectId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setSubjectId(Integer subjectId) {
+        this.subjectId = subjectId;
     }
 
     public String getName() {
@@ -34,14 +45,6 @@ public class Subject {
         this.description = description;
     }
 
-    public Class getaClass() {
-        return aClass;
-    }
-
-    public void setaClass(Class aClass) {
-        this.aClass = aClass;
-    }
-
     public Integer getMaxMarks() {
         return maxMarks;
     }
@@ -50,11 +53,11 @@ public class Subject {
         this.maxMarks = maxMarks;
     }
 
-    public Integer getPassionMarks() {
-        return passionMarks;
+    public Integer getPassingMarks() {
+        return passingMarks;
     }
 
-    public void setPassionMarks(Integer passionMarks) {
-        this.passionMarks = passionMarks;
+    public void setPassingMarks(Integer passingMarks) {
+        this.passingMarks = passingMarks;
     }
 }

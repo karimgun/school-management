@@ -24,14 +24,14 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public List<Student> getStudents(Division division) {
-        TypedQuery<Student> query = entityManager.createQuery("from Student where division =" + division.getId(), Student.class);
+        TypedQuery<Student> query = entityManager.createQuery("from Student where division =" + division.getDivisionId(), Student.class);
         List<Student> resultList = query.getResultList();
         return resultList;
     }
 
     @Override
     public List<Student> getStudents(Class aclass) {
-        TypedQuery<Student> query = entityManager.createQuery("from Student where class =" + aclass.getId(), Student.class);
+        TypedQuery<Student> query = entityManager.createQuery("from Student where class =" + aclass.getClassId(), Student.class);
         List<Student> resultList = query.getResultList();
         return resultList;
     }

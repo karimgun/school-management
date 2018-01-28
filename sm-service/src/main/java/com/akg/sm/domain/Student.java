@@ -1,8 +1,6 @@
 package com.akg.sm.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.sql.Date;
 import java.util.List;
 
@@ -10,13 +8,30 @@ import java.util.List;
 @Table(name = "STUDENT")
 public class Student extends Individual {
 
-    @ManyToMany
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long studentId;
+
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "STUDENT_PARENT", joinColumns = {@JoinColumn(name = "STUDENT_ID")}, inverseJoinColumns = {@JoinColumn(name = "PARENT_ID")})
     private List<Parent> parents;
 
+    @ManyToOne(optional = false)
     private Class aClass;
+
+    @ManyToOne(optional = false)
     private Division division;
 
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "STUDENT_OPTIONAL_SUBJECTS", joinColumns = {@JoinColumn(name = "STUDENT_ID")}, inverseJoinColumns = {@JoinColumn(name = "SUBJECT_ID")})
     private List<Subject> optionalSubjects;
+
+    @Column
+    private Date enrollmentDate;
+
+    @Column
+    private Date separationDate;
 
     public List<Parent> getParents() {
         return parents;
@@ -48,5 +63,21 @@ public class Student extends Individual {
 
     public void setOptionalSubjects(List<Subject> optionalSubjects) {
         this.optionalSubjects = optionalSubjects;
+    }
+
+    public Date getEnrollmentDate() {
+        return enrollmentDate;
+    }
+
+    public void setEnrollmentDate(Date enrollmentDate) {
+        this.enrollmentDate = enrollmentDate;
+    }
+
+    public Date getSeparationDate() {
+        return separationDate;
+    }
+
+    public void setSeparationDate(Date separationDate) {
+        this.separationDate = separationDate;
     }
 }

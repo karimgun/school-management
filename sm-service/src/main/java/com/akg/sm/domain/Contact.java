@@ -1,11 +1,34 @@
 package com.akg.sm.domain;
 
-public class ContactDetails {
+import javax.persistence.*;
 
+@Entity
+@Table(name = "CONTACT")
+public class Contact {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long contactId;
+
+    @Column
     private String email;
+
+    @Column
     private Long mobileNumber;
+
+    @Column
     private Long homePhone;
+
+    @Column
     private Long officePhone;
+
+    public Long getContactId() {
+        return contactId;
+    }
+
+    public void setContactId(Long contactId) {
+        this.contactId = contactId;
+    }
 
     public String getEmail() {
         return email;

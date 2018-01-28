@@ -1,17 +1,26 @@
 package com.akg.sm.domain;
 
+import javax.persistence.*;
+
+@Entity
 public class State {
 
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer stateId;
+
+    @Column
     private String code;
+
+    @Column
     private String name;
 
-    public Integer getId() {
-        return id;
+    public Integer getStateId() {
+        return stateId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setStateId(Integer stateId) {
+        this.stateId = stateId;
     }
 
     public String getCode() {

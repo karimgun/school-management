@@ -1,19 +1,28 @@
 package com.akg.sm.domain;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
 public class Exam {
 
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int examId;
+
+    @Column
     private String name;
+
+    @Column
     private Date examDate;
 
-    public int getId() {
-        return id;
+
+    public int getExamId() {
+        return examId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setExamId(int examId) {
+        this.examId = examId;
     }
 
     public String getName() {

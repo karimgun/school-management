@@ -1,17 +1,26 @@
 package com.akg.sm.domain;
 
+import javax.persistence.*;
+
+@Entity
 public class City {
 
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer cityId;
+
+    @Column
     private String name;
+
+    @Column
     private Integer zipCode;
 
-    public Integer getId() {
-        return id;
+    public Integer getCityId() {
+        return cityId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setCityId(Integer cityId) {
+        this.cityId = cityId;
     }
 
     public String getName() {

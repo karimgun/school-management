@@ -1,21 +1,29 @@
 package com.akg.sm.domain;
 
+import javax.persistence.*;
 import java.util.List;
 
+@Entity
 public class Class {
 
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer classId;
+    @Column
     private String code;
+    @Column
     private String name;
 
-    private List<Subject> subjects;
+//    @ManyToMany(mappedBy = "CLASS_SUBJECTS")
+//    private List<Subject> subjects;
 
-    public Integer getId() {
-        return id;
+
+    public Integer getClassId() {
+        return classId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setClassId(Integer classId) {
+        this.classId = classId;
     }
 
     public String getCode() {
@@ -34,11 +42,11 @@ public class Class {
         this.name = name;
     }
 
-    public List<Subject> getSubjects() {
-        return subjects;
-    }
-
-    public void setSubjects(List<Subject> subjects) {
-        this.subjects = subjects;
-    }
+//    public List<Subject> getSubjects() {
+//        return subjects;
+//    }
+//
+//    public void setSubjects(List<Subject> subjects) {
+//        this.subjects = subjects;
+//    }
 }
